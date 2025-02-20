@@ -6,18 +6,17 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="max-w-full flex flex-wrap items-center justify-between p-8 pt-4 absolute top-2 left-0 right-0 z-10">
-        <a href="#" className="flex items-center space-x-3 self-start">
+      <div className="max-w-full flex flex-wrap items-center md:items-start justify-between absolute top-0 left-0 right-0 p-4 md:p-8 z-10">
+        <div className="flex gap-2 items-center">
           <img
             src="https://flowbite.com/docs/images/logo.svg"
             className="h-8"
             alt="Flowbite Logo"
           />
-          <span className="self-center text-3xl font-semibold whitespace-nowrap text-primary-text">
+          <span className="self-center text-xl md:text-3xl font-semibold whitespace-nowrap text-primary-text">
             Dule Autoservis
           </span>
-        </a>
-
+        </div>
         {/* Hamburger Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}

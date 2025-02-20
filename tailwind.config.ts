@@ -14,6 +14,7 @@ export default {
         "background-primary": "#242423",
         "background-secondary": "#353637",
         "primary-text": "#c8bb9d",
+        "secondary-text": "#767060",
         "dark-blue": "#212A31",
         "deep-grayish-blue": "#2F3843",
         "teal-blue": "#124E66",
