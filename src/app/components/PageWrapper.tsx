@@ -1,12 +1,13 @@
 import React from "react";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const PageWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="backdrop-blur-md min-h-screen flex flex-col bg-background-primary">
       <NavBar />
       <main className="flex-1">{children}</main>
-      <footer className="p-4 bg-gray-200">Footer</footer>
+      <Footer />
     </div>
   );
 };
