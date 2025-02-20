@@ -48,7 +48,7 @@ const NavBar = () => {
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-dropdown"
         >
-          <ul className="flex gap-4 flex-col text-l font-extrabold p-4 mt-4 border border-gray-700 rounded-lg bg-deep-grayish-blue md:bg-transparent  md:mt-0 md:border-0 uppercase">
+          <ul className="flex gap-4 flex-col md:flex-row text-l font-extrabold p-4 mt-4 border border-gray-700 rounded-lg bg-deep-grayish-blue md:bg-transparent  md:mt-0 md:border-0 uppercase">
             <li>
               <a
                 href="#"
