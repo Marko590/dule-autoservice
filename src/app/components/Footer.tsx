@@ -1,3 +1,4 @@
+import { LocateIcon, MapPin, Phone, PhoneCall } from "lucide-react";
 import React from "react";
 
 const Footer = () => {
@@ -33,17 +34,8 @@ const Footer = () => {
                 href="https://maps.app.goo.gl/XwrXwk6V96PLvS4W9"
                 className="flex items-center"
               >
-                <svg
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 12 7 12s7-6.75 7-12c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
-                    fill="currentColor"
-                  />
-                </svg>
+                <MapPin />
+
                 <span className="base-text text-center font-semibold hover:underline">
                   Miljakovačke Staze, Beograd
                 </span>
@@ -54,17 +46,7 @@ const Footer = () => {
                 href="https://maps.app.goo.gl/XwrXwk6V96PLvS4W9"
                 className="flex items-center"
               >
-                <svg
-                  className="w-6 h-6"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.5 15.5c-1.1 0-2.2-.2-3.2-.6a1.99 1.99 0 0 0-2.1.4l-1.5 1.5c-2.7-1.2-5-3.4-6.2-6.2l1.5-1.5a2 2 0 0 0 .4-2.1c-.4-1-.6-2.1-.6-3.2 0-.8-.7-1.5-1.5-1.5H4C2.9 2 2 2.9 2 4c0 9.4 7.6 17 17 17 1.1 0 2-.9 2-2v-2.5c0-.8-.7-1.5-1.5-1.5z"
-                    fill="currentColor"
-                  />
-                </svg>
+                <Phone />
                 <span className="base-text text-center font-semibold hover:underline">
                   Miljakovačke Staze, Beograd
                 </span>

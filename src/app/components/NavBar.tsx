@@ -1,4 +1,5 @@
 "use client";
+import { Menu } from "lucide-react";
 import { useState } from "react";
 
 const NavBar = () => {
@@ -6,7 +7,7 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="max-w-full flex flex-wrap items-center md:items-start justify-between absolute top-0 left-0 right-0 p-4 md:p-8 z-10">
+      <div className="max-w-full flex flex-wrap items-center md:items-start justify-between absolute top-0 left-0 right-0 p-4 pb-0 md:p-8 md:pb-0 z-10">
         <div className="flex gap-2 items-center">
           <img
             src="https://flowbite.com/docs/images/logo.svg"
@@ -26,21 +27,7 @@ const NavBar = () => {
           aria-expanded={isOpen}
         >
           <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+          <Menu className="w-8 h-8" />
         </button>
 
         {/* Navbar Links */}
