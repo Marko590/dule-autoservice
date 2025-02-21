@@ -12,7 +12,7 @@ const ServicesItem = ({
     <motion.div
       initial={{ opacity: 0, scale: 0 }}
       transition={{ duration: 1.5, type: "spring" }}
-      whileInView={{ opacity: 0.8, scale: 1 }}
+      whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       className="rounded-xl flex flex-col gap-4 p-4 items-center bg-background-primary m-2 "
     >

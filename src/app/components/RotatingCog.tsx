@@ -15,7 +15,7 @@ const RotatingCog = ({
   const rotate = useTransform(
     scrollYProgress,
     [0, 1],
-    reverse ? [360, 0] : [15, 375],
+    reverse ? [720, 0] : [15, 735],
   );
 
   return (
@@ -26,7 +26,6 @@ const RotatingCog = ({
       viewport={{ once: true }}
       transition={{
         duration: 1,
-        ease: "backInOut",
         times: [0, 0.25, 0.5, 0.65, 1],
       }}
       className="flex justify-center items-center"
