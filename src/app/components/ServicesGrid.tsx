@@ -1,10 +1,11 @@
 import { CircleDollarSign, Cog, Timer, Wrench } from "lucide-react";
 import React from "react";
 import ServicesItem from "./ServicesItem";
+import { motion } from "framer-motion";
 
 const ServicesGrid = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] md:w-[70%] h-auto sm:p-4">
+    <motion.div className="grid grid-cols-1 md:grid-cols-2 w-[80%] md:w-[70%] h-auto sm:p-8">
       <ServicesItem
         icon={<Wrench className="text-secondary w-8 h-8" />}
         content="Comprehensive Auto Repairs – From routine maintenance to major repairs"
@@ -20,9 +21,9 @@ const ServicesGrid = () => {
       />
       <ServicesItem
         icon={<CircleDollarSign className="text-secondary w-8 h-8" />}
-        content="Affordable Pricing – Get top-notch auto repairs at competitive rates.We offer transparent pricing with no hidden fees."
+        content="Affordable Pricing – Get top-notch auto repairs at competitive rates."
       />
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,4 +1,4 @@
-import { Wrench } from "lucide-react";
+import { motion } from "framer-motion";
 import React, { ReactNode } from "react";
 
 const ServicesItem = ({
@@ -9,10 +9,16 @@ const ServicesItem = ({
   content: string;
 }) => {
   return (
-    <div className="flex h-full flex-col gap-4 p-4 items-center bg-background-primary opacity-50 hover:opacity-100 transition-opacity duration-300 ease-in-out">
+    <motion.div
+      initial={{ opacity: 0, scale: 0 }}
+      transition={{ duration: 1.5, type: "spring" }}
+      whileInView={{ opacity: 0.8, scale: 1 }}
+      viewport={{ once: true }}
+      className="rounded-xl flex flex-col gap-4 p-4 items-center bg-background-primary m-2 "
+    >
       {icon}
       <p className="text-center font-sans">{content}</p>
-    </div>
+    </motion.div>
   );
 };
 
