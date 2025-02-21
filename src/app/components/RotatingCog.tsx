@@ -1,6 +1,6 @@
 "use client";
 import clsx from "clsx";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Cog } from "lucide-react";
 import React from "react";
 
@@ -22,7 +22,7 @@ const RotatingCog = ({
     <motion.div
       style={{ rotate }}
       initial={{ scale: 0, y: 0 }}
-      whileInView={{ scale: 1, y: [0, 150, -150, -150, 0] }}
+      whileInView={{ scale: 1, y: [0, 25, -25, -25, 0] }}
       viewport={{ once: true }}
       transition={{
         duration: 1,
