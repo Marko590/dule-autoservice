@@ -5,6 +5,7 @@ import RotatingCog from "./components/RotatingCog";
 import ServicesGrid from "./components/ServicesGrid";
 import { motion } from "framer-motion";
 import MapComponent from "./components/MapComponent";
+import AnimatedButton from "./components/AnimatedButton";
 export default function Home() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 min-h-[200vh]">
@@ -23,18 +24,12 @@ export default function Home() {
             </p>
           </div>
           <div className="flex w-[100%] justify-center gap-8 mb-24">
-            <button className="group flex items-center gap-2 w-[40%] justify-center border-primary border-2 px-6 py-2 text-primary-text rounded-3xl font-sans text-l uppercase transition-all duration-300 hover:bg-primary hover:scale-110">
-              <motion.div className="group-hover:animate-ping">
-                <Phone className="w-6 h-6" />
-              </motion.div>
-              Call
-            </button>
-            <button className=" group flex items-center gap-2 w-[40%] justify-center border-2 border-primary px-6 py-2 text-primary-text text-l rounded-3xl font-sans uppercase transition-all duration-300 hover:bg-primary hover:scale-110">
-              <motion.div className="group-hover:animate-bounce">
-                <MapPin className="w-6 h-6" />
-              </motion.div>{" "}
-              Location
-            </button>
+            <AnimatedButton text="Call" icon={<Phone />} animationType="ping" />
+            <AnimatedButton
+              text="Location"
+              icon={<MapPin />}
+              animationType="bounce"
+            />
           </div>
         </div>
       </MainPageContainer>
