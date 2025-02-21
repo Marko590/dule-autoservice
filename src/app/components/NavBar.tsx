@@ -35,11 +35,11 @@ const NavBar = () => {
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-dropdown"
         >
-          <ul className="flex gap-4 flex-col md:flex-row text-l font-extrabold p-4 mt-4 border border-gray-700 rounded-lg bg-deep-grayish-blue md:bg-transparent  md:mt-0 md:border-0 uppercase">
+          <ul className="flex gap-4 flex-col md:flex-row text-l font-extrabold p-4 mt-4 rounded-lg bg-background-secondary md:bg-transparent  md:mt-0 md:border-0 uppercase">
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-primary-text rounded-sm hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
+                className="block py-2 px-3 text-primary-text rounded-sm hover:bg-background-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
               >
                 Home
               </a>
@@ -47,7 +47,7 @@ const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-primary-text rounded-sm hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
+                className="block py-2 px-3 text-primary-text rounded-sm hover:bg-background-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
               >
                 Services
               </a>
@@ -55,7 +55,7 @@ const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-primary-text rounded-sm hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
+                className="block py-2 px-3 text-primary-text rounded-sm hover:bg-background-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
               >
                 Pricing
               </a>
@@ -63,7 +63,7 @@ const NavBar = () => {
             <li>
               <a
                 href="#"
-                className="block py-2 px-3 text-primary-text rounded-sm hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
+                className="block py-2 px-3 text-primary-text rounded-sm hover:bg-background-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
               >
                 Contact
               </a>

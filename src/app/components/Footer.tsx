@@ -1,4 +1,4 @@
-import { LocateIcon, MapPin, Phone, PhoneCall } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import React from "react";
 
 const Footer = () => {
@@ -20,10 +20,7 @@ const Footer = () => {
             </span>
           </a>
           <p className="base-text p-4">
-            This is some text inside a paragraph box. It will wrap and break if
-            it's too long for the box, preventing overflow. You can add more
-            text here to see how it behaves when it exceeds the height of the
-            box.
+            This is some text inside a paragraph box.
           </p>
         </div>
         <div className="flex flex-col p-4 items-center">

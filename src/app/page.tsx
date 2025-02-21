@@ -48,7 +48,7 @@ export default function Home() {
               <RotatingCog className="w-10 h-10 mx-[-4px]" reverse />
               <RotatingCog className="w-10 h-10 mx-[-4px]" />
             </div>
-            <div className="flex flex-col items-start gap-12 mt-16">
+            <div className="flex flex-col items-start gap-8 mt-16">
               <div>
                 <span className="flex base-text gap-4 font-sans items-center text-xl md:text-2xl font-light">
                   <Phone className="w-4 h-4 md:w-8 md:h-8" />
