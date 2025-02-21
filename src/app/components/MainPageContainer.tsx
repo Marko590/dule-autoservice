@@ -1,6 +1,7 @@
+"use client";
 import clsx from "clsx";
-import React, { ReactNode } from "react";
-
+import { motion, useInView } from "framer-motion";
+import React, { ReactNode, useRef } from "react";
 const MainPageContainer = ({
   children,
   className,
@@ -8,15 +9,18 @@ const MainPageContainer = ({
   children: ReactNode;
   className?: string;
 }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
   return (
-    <div
-      className={clsx(
-        "opacity-50 transition-opacity duration-500 ease-in-out hover:opacity-100 shadow-[inset_0_0_100px_rgba(0,0,0,0.3)]",
-        className,
-      )}
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0.5 }}
+      animate={{ opacity: isInView ? 1 : 0 }}
+      transition={{ duration: 1 }}
+      className={clsx("shadow-[inset_0_0_100px_rgba(0,0,0,0.3)]", className)}
     >
       {children}
-    </div>
+    </motion.div>
   );
 };
 
