@@ -15,8 +15,8 @@ const Footer = () => {
               className="h-8"
               alt="Flowbite Logo"
             />
-            <span className="base-text text-3xl font-semibold whitespace-nowrap ">
-              Dule Autoservis
+            <span className="base-text text-2xl font-semibold whitespace-nowrap ">
+              Dule's Repair Shop
             </span>
           </a>
           <p className="base-text p-4">

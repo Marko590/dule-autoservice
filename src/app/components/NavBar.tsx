@@ -15,7 +15,7 @@ const NavBar = () => {
             alt="Flowbite Logo"
           />
           <span className="self-center text-xl md:text-3xl font-semibold whitespace-nowrap text-primary-text">
-            Dule Autoservis
+            Dule's Repair Shop
           </span>
         </div>
         {/* Hamburger Button */}

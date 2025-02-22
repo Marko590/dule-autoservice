@@ -5,13 +5,29 @@ import RotatingCog from "./components/RotatingCog";
 import ServicesGrid from "./components/ServicesGrid";
 import MapComponent from "./components/MapComponent";
 import AnimatedButton from "./components/AnimatedButton";
+import Image from "next/image";
+import { motion, spring } from "framer-motion";
 export default function Home() {
+  const images = [
+    {
+      original: "https://picsum.photos/id/1018/1000/600/",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1015/1000/600/",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+  ];
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 min-h-[200vh]">
       <MainPageContainer className="h-[100vh]">
         <div className="h-full w-full flex flex-col justify-end items-center">
-          <p className="base-text text-4xl md:text-5xl font-light font-sans w-full text-center mb-16">
-            Maintenance of{" "}
+          <p className="base-text text-5xl p-4 md:text-5xl font-light font-sans w-full text-center mb-16">
+            Maintenance of
             <span className="text-primary"> automatic transmissions </span>
             at
             <span className="text-secondary"> affordable prices </span>
@@ -19,8 +35,7 @@ export default function Home() {
           <div className="w-full flex justify-center  mb-12 ">
             <p className="text-secondary-text w-[70%] font-sans text-center md:text-left">
               Our auto repair shop specializes in the repair and maintenance of
-              automatic transmissions. With a team of skilled technicians and
-              state-of-the-art equipment, we provide reliable services to ensure
+              automatic transmissions. We provide reliable services to ensure
               your vehicle runs smoothly.
             </p>
           </div>
@@ -39,7 +54,7 @@ export default function Home() {
       </MainPageContainer>
       <MainPageContainer className="h-[100vh] flex flex-col shape-2 order-4 md:order-3">
         <div className="flex-1 ">
-          <div className="relative flex-[1] flex flex-col items-center p-6">
+          <div className="relative flex flex-col items-center p-6">
             <span className="base-text font-sans text-4xl">Contact</span>
             <div className="absolute flex top-16 left-0 right-0 justify-center items-start">
               <RotatingCog className="w-10 h-10 mx-[-4px]" />
@@ -70,12 +85,60 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex-1 bg-slate-800">
+        <div className="flex-1 p-8">
           <MapComponent />
         </div>
       </MainPageContainer>
       <MainPageContainer className="h-[100vh] flex flex-col order-3 md:order-4">
-        <div className="flex-[1]">asdf</div>
+        <div className="flex-[1] relative">
+          <Image
+            className="md:p-8 object-contain md:object-cover"
+            src="/orange-car.webp"
+            layout="fill"
+            alt="Orange-car"
+          />
+        </div>
+        <div className="flex-[1] flex flex-col items-center gap-2 p-8 pt-0">
+          <span className="base-text text-4xl font-sans">About us</span>
+          <div className="flex flex-col gap-4 md:gap-8">
+            <motion.p
+              initial={{ x: -150 }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 1, type: "spring" }}
+              viewport={{ once: true }}
+              className="base-text text-l md:text-xl"
+            >
+              At <span className="text-primary">Dule's Repair Shop</span>, we
+              specialize in
+              <span className="text-secondary">
+                automatic transmission repair
+              </span>
+              , ensuring smooth and reliable performance for your vehicle.
+            </motion.p>
+            <motion.p
+              initial={{ x: -150 }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 1, type: "spring" }}
+              viewport={{ once: true }}
+              className="base-text text-l md:text-xl"
+            >
+              Whether you need transmission servicing, repairs, or a complete
+              rebuild, we use the latest tools and high-quality parts to keep
+              your car running flawlessly.
+            </motion.p>
+            <motion.p
+              initial={{ x: -150, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 2, type: "spring" }}
+              viewport={{ once: true }}
+              className="base-text text-l md:text-xl"
+            >
+              Visit us for professional and affordable automatic gearbox repair
+              in <span className="text-primary">Belgrade, Miljakovac 3 </span>
+              and get back on the road with confidence!
+            </motion.p>
+          </div>
+        </div>
       </MainPageContainer>
     </div>
   );
