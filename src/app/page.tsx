@@ -6,22 +6,8 @@ import ServicesGrid from "./components/ServicesGrid";
 import MapComponent from "./components/MapComponent";
 import AnimatedButton from "./components/AnimatedButton";
 import Image from "next/image";
-import { motion, spring } from "framer-motion";
+import { motion } from "framer-motion";
 export default function Home() {
-  const images = [
-    {
-      original: "https://picsum.photos/id/1018/1000/600/",
-      thumbnail: "https://picsum.photos/id/1018/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1015/1000/600/",
-      thumbnail: "https://picsum.photos/id/1015/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1019/1000/600/",
-      thumbnail: "https://picsum.photos/id/1019/250/150/",
-    },
-  ];
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 min-h-[200vh]">
       <MainPageContainer className="h-[100vh]">
@@ -114,8 +100,8 @@ export default function Home() {
               viewport={{ once: true }}
               className="base-text text-l md:text-xl"
             >
-              At <span className="text-primary">Dule's Repair Shop</span>, we
-              specialize in
+              At <span className="text-primary">{"Dule's Repair Shop"}</span>,
+              we specialize in
               <span className="text-secondary">
                 automatic transmission repair
               </span>

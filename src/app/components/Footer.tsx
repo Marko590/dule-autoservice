@@ -16,7 +16,7 @@ const Footer = () => {
               alt="Flowbite Logo"
             />
             <span className="base-text text-2xl font-semibold whitespace-nowrap ">
-              Dule's Repair Shop
+              {"Dule's Repair Shop"}
             </span>
           </a>
           <p className="base-text p-4">
@@ -24,17 +24,16 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col p-4 items-center">
-          <span className="base-text font-extralight text-xl">Contact us</span>
-          <ul className="flex flex-col gap-4 py-4 items-center">
+          <span className="base-text text-xl">Contact us</span>
+          <ul className="flex flex-col gap-4 py-4 items-start">
             <li>
               <a
                 href="https://maps.app.goo.gl/XwrXwk6V96PLvS4W9"
                 className="flex items-center"
               >
-                <MapPin />
-
+                <Phone />
                 <span className="base-text text-center font-semibold hover:underline">
-                  Miljakovačke Staze, Beograd
+                  065-456-28-46
                 </span>
               </a>
             </li>
@@ -43,9 +42,10 @@ const Footer = () => {
                 href="https://maps.app.goo.gl/XwrXwk6V96PLvS4W9"
                 className="flex items-center"
               >
-                <Phone />
+                <MapPin />
+
                 <span className="base-text text-center font-semibold hover:underline">
-                  Miljakovačke Staze, Beograd
+                  Emanuela Laskera 24, Beograd
                 </span>
               </a>
             </li>

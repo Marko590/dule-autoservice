@@ -15,7 +15,7 @@ const NavBar = () => {
             alt="Flowbite Logo"
           />
           <span className="self-center text-xl md:text-3xl font-semibold whitespace-nowrap text-primary-text">
-            Dule's Repair Shop
+            {" Dule's Repair Shop"}
           </span>
         </div>
         {/* Hamburger Button */}
@@ -38,7 +38,7 @@ const NavBar = () => {
           <ul className="flex gap-4 flex-col md:flex-row text-l font-extrabold p-4 mt-4 rounded-lg bg-background-secondary md:bg-transparent  md:mt-0 md:border-0 uppercase">
             <li>
               <a
-                href="#"
+                href="/"
                 className="block py-2 px-3 text-primary-text rounded-sm hover:bg-background-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
               >
                 Home
@@ -46,7 +46,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/services"
                 className="block py-2 px-3 text-primary-text rounded-sm hover:bg-background-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
               >
                 Services
@@ -54,18 +54,10 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/pricing"
                 className="block py-2 px-3 text-primary-text rounded-sm hover:bg-background-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
               >
                 Pricing
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-primary-text rounded-sm hover:bg-background-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
-              >
-                Contact
               </a>
             </li>
           </ul>
