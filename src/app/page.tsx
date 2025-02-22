@@ -90,14 +90,20 @@ export default function Home() {
         </div>
       </MainPageContainer>
       <MainPageContainer className="h-[100vh] flex flex-col order-3 md:order-4">
-        <div className="flex-[1] relative">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2, type: "spring" }}
+          viewport={{ once: true }}
+          className="flex-[1] relative"
+        >
           <Image
             className="md:p-8 object-contain md:object-cover"
             src="/orange-car.webp"
             layout="fill"
             alt="Orange-car"
           />
-        </div>
+        </motion.div>
         <div className="flex-[1] flex flex-col items-center gap-2 p-8 pt-0">
           <span className="base-text text-4xl font-sans">About us</span>
           <div className="flex flex-col gap-4 md:gap-8">
