@@ -1,5 +1,6 @@
 "use client";
 import { Menu } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const NavBar = () => {
@@ -37,28 +38,28 @@ const NavBar = () => {
         >
           <ul className="flex gap-4 flex-col md:flex-row text-l font-extrabold p-4 mt-4 rounded-lg bg-background-secondary md:bg-transparent  md:mt-0 md:border-0 uppercase">
             <li>
-              <a
+              <Link
                 href="/"
                 className="block py-2 px-3 text-primary-text rounded-sm hover:bg-background-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/services"
                 className="block py-2 px-3 text-primary-text rounded-sm hover:bg-background-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/pricing"
                 className="block py-2 px-3 text-primary-text rounded-sm hover:bg-background-primary md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0"
               >
                 Pricing
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
