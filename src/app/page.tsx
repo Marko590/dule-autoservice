@@ -12,18 +12,21 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 min-h-[200vh]">
       <MainPageContainer className="h-[100vh]">
         <div className="h-full w-full flex flex-col justify-end items-center">
-          <p className="base-text text-5xl p-4 md:text-5xl font-light font-sans w-full text-center mb-16">
-            Maintenance of
-            <span className="text-primary"> automatic transmissions </span>
-            at
-            <span className="text-secondary"> affordable prices </span>
-          </p>
+          {" "}
+          <div className="flex-grow flex items-center justify-center w-full">
+            <h1 className="base-text text-5xl p-4 md:text-7xl font-light font-sans w-full text-center ">
+              Maintenance of
+              <span className="text-primary"> automatic transmissions </span>
+              at
+              <span className="text-secondary"> affordable prices </span>
+            </h1>
+          </div>
           <div className="w-full flex justify-center  mb-12 ">
-            <p className="text-secondary-text w-[70%] font-sans text-center md:text-left">
+            <h2 className="text-secondary-text w-[70%] font-sans text-md md:text-xl text-center md:text-left">
               Our auto repair shop specializes in the repair and maintenance of
               automatic transmissions. We provide reliable services to ensure
               your vehicle runs smoothly.
-            </p>
+            </h2>
           </div>
           <div className="flex w-[100%] justify-center gap-8 mb-16">
             <AnimatedButton text="Call" icon={<Phone />} animationType="ping" />
