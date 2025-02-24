@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const ServicesGrid = () => {
   return (
-    <motion.div className="grid grid-cols-1 md:grid-cols-2 w-[80%] md:w-[90%] h-auto sm:p-8">
+    <motion.div className="grid grid-cols-1 md:grid-cols-2 w-[90%] md:w-[80%] h-[70%] gap-4 ">
       <ServicesItem
         icon={<Wrench className="text-secondary w-8 h-8" />}
         content="Comprehensive Auto Repairs – From routine maintenance to major repairs"

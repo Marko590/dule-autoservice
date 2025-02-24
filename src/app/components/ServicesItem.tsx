@@ -14,10 +14,11 @@ const ServicesItem = ({
       transition={{ duration: 1.5, type: "spring" }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
-      className="rounded-xl flex flex-col gap-4 p-4 items-center bg-background-primary m-2 "
+      className="rounded-xl flex flex-col gap-4 p-4 items-center bg-background-primary flex-grow "
     >
       {icon}
-      <p className="text-center font-sans">{content}</p>
+
+      <p className="text-center lg:text-xl font-sans">{content}</p>
     </motion.div>
   );
 };

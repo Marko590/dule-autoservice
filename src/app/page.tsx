@@ -14,7 +14,7 @@ export default function Home() {
         <div className="h-full w-full flex flex-col justify-end items-center">
           {" "}
           <div className="flex-grow flex items-center justify-center w-full">
-            <h1 className="base-text text-5xl p-4 md:text-7xl font-light font-sans w-full text-center ">
+            <h1 className="base-text text-5xl p-4 xl:text-7xl font-light font-sans w-full text-center ">
               Maintenance of
               <span className="text-primary"> automatic transmissions </span>
               at
@@ -22,7 +22,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="w-full flex justify-center  mb-12 ">
-            <h2 className="text-secondary-text w-[70%] font-sans text-md md:text-xl text-center md:text-left">
+            <h2 className="text-secondary-text w-[70%] font-sans text-md lg:text-xl text-center md:text-left">
               Our auto repair shop specializes in the repair and maintenance of
               automatic transmissions. We provide reliable services to ensure
               your vehicle runs smoothly.
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </div>
       </MainPageContainer>
-      <MainPageContainer className="min-h-screen shape-2 flex flex-col justify-center items-center ">
+      <MainPageContainer className="min-h-screen shape-2 flex  justify-center items-center ">
         <ServicesGrid />
       </MainPageContainer>
       <MainPageContainer className="h-[100vh] flex flex-col shape-2 order-4 md:order-3">
