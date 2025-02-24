@@ -17,7 +17,10 @@ const MainPageContainer = ({
       initial={{ opacity: 0.5 }}
       animate={{ opacity: isInView ? 1 : 0 }}
       transition={{ duration: 1 }}
-      className={clsx("shadow-[inset_0_0_100px_rgba(0,0,0,0.3)]", className)}
+      className={clsx(
+        "h-[100vh] w-full shadow-[inset_0_0_100px_rgba(0,0,0,0.3)]",
+        className,
+      )}
     >
       {children}
     </motion.div>

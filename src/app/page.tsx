@@ -9,28 +9,28 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import CogTitle from "./components/CogTitle";
 import AnimatedParagraph from "./components/AnimatedParagraph";
+import ContactInfo from "./components/ContactInfo";
 export default function Home() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 min-h-[200vh]">
-      <MainPageContainer className="h-[100vh]">
+      <MainPageContainer>
         <div className="h-full w-full flex flex-col justify-end items-center">
-          {" "}
-          <div className="flex-grow flex items-center justify-center w-full">
-            <h1 className="base-text text-5xl p-4 xl:text-7xl font-light font-sans w-full text-center ">
+          <div className="flex-grow flex items-center justify-center">
+            <h1 className="base-text text-5xl p-4 xl:text-7xl font-light font-sans pt-16">
               Maintenance of
               <span className="text-primary"> automatic transmissions </span>
               at
               <span className="text-secondary"> affordable prices </span>
             </h1>
           </div>
-          <div className="w-full flex justify-center  mb-12 ">
-            <h2 className="text-secondary-text w-[70%] font-sans text-md lg:text-xl text-center md:text-left">
+          <div className="w-full flex justify-center  mb-12">
+            <h2 className="text-secondary-text w-[90%] font-sans text-md lg:text-xl text-center md:text-left">
               Our auto repair shop specializes in the repair and maintenance of
               automatic transmissions. We provide reliable services to ensure
               your vehicle runs smoothly.
             </h2>
           </div>
-          <div className="flex w-[100%] justify-center gap-8 mb-16">
+          <div className="flex w-full justify-center gap-8 mb-16">
             <AnimatedButton text="Call" icon={<Phone />} animationType="ping" />
             <AnimatedButton
               text="Location"
@@ -40,32 +40,20 @@ export default function Home() {
           </div>
         </div>
       </MainPageContainer>
-      <MainPageContainer className="min-h-screen shape-2 flex  justify-center items-center ">
+      <MainPageContainer className="shape-2 flex justify-center items-center ">
         <ServicesGrid />
       </MainPageContainer>
-      <MainPageContainer className="h-[100vh] flex flex-col shape-2 order-4 md:order-3">
-        <div className="flex-1 ">
+      <MainPageContainer className="flex flex-col shape-2 order-4 md:order-3">
+        <div className="flex-1">
           <div className="flex flex-col items-center p-6">
             <CogTitle title="Contact" />
             <div className="flex flex-col items-start gap-8 mt-16">
-              <div>
-                <span className="flex base-text gap-4 font-sans items-center text-xl md:text-2xl font-light">
-                  <Phone className="w-4 h-4 md:w-8 md:h-8" />
-                  +38165-456-28-46
-                </span>
-              </div>
-              <div>
-                <span className="flex base-text gap-4 font-sans items-center text-xl md:text-2xl font-light">
-                  <MapPin className="w-4 h-4  md:w-8 md:h-8" />
-                  Emanuela Laskera 24, Belgrade
-                </span>
-              </div>
-              <div>
-                <span className="flex base-text gap-4 font-sans items-center text-xl md:text-2xl font-light">
-                  <Mail className="w-4 h-4  md:w-8 md:h-8" />
-                  dusan.trajkovic@gmail.com
-                </span>
-              </div>
+              <ContactInfo text="+381-65-456-28-46" icon={<Phone />} />
+              <ContactInfo
+                text="Emanuela Laskera 24, Belgrade"
+                icon={<MapPin />}
+              />
+              <ContactInfo text="dusan.trajkovic@gmail.com" icon={<Mail />} />
             </div>
           </div>
         </div>
@@ -73,7 +61,7 @@ export default function Home() {
           <MapComponent />
         </div>
       </MainPageContainer>
-      <MainPageContainer className="h-[100vh] flex flex-col order-3 md:order-4">
+      <MainPageContainer className="flex flex-col order-3 md:order-4">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
