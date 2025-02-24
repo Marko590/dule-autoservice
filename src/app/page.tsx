@@ -7,6 +7,8 @@ import MapComponent from "./components/MapComponent";
 import AnimatedButton from "./components/AnimatedButton";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import CogTitle from "./components/CogTitle";
+import AnimatedParagraph from "./components/AnimatedParagraph";
 export default function Home() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 min-h-[200vh]">
@@ -43,15 +45,8 @@ export default function Home() {
       </MainPageContainer>
       <MainPageContainer className="h-[100vh] flex flex-col shape-2 order-4 md:order-3">
         <div className="flex-1 ">
-          <div className="relative flex flex-col items-center p-6">
-            <span className="base-text font-sans text-4xl">Contact</span>
-            <div className="absolute flex top-16 left-0 right-0 justify-center items-start">
-              <RotatingCog className="w-10 h-10 mx-[-4px]" />
-              <RotatingCog className="w-10 h-10 mx-[-4px]" reverse />
-              <RotatingCog className="w-10 h-10 mx-[-4px]" />
-              <RotatingCog className="w-10 h-10 mx-[-4px]" reverse />
-              <RotatingCog className="w-10 h-10 mx-[-4px]" />
-            </div>
+          <div className="flex flex-col items-center p-6">
+            <CogTitle title="Contact" />
             <div className="flex flex-col items-start gap-8 mt-16">
               <div>
                 <span className="flex base-text gap-4 font-sans items-center text-xl md:text-2xl font-light">
@@ -96,42 +91,25 @@ export default function Home() {
         <div className="flex-[1] flex flex-col items-center gap-2 p-8 pt-0">
           <span className="base-text text-4xl font-sans">About us</span>
           <div className="flex flex-col gap-4 md:gap-8">
-            <motion.p
-              initial={{ x: -150 }}
-              whileInView={{ x: 0 }}
-              transition={{ duration: 1, type: "spring" }}
-              viewport={{ once: true }}
-              className="base-text text-l md:text-xl"
-            >
+            <AnimatedParagraph>
               At <span className="text-primary">{"Dule's Repair Shop"}</span>,
               we specialize in
               <span className="text-secondary">
                 automatic transmission repair
               </span>
               , ensuring smooth and reliable performance for your vehicle.
-            </motion.p>
-            <motion.p
-              initial={{ x: -150 }}
-              whileInView={{ x: 0 }}
-              transition={{ duration: 1, type: "spring" }}
-              viewport={{ once: true }}
-              className="base-text text-l md:text-xl"
-            >
+            </AnimatedParagraph>
+
+            <AnimatedParagraph>
               Whether you need transmission servicing, repairs, or a complete
               rebuild, we use the latest tools and high-quality parts to keep
               your car running flawlessly.
-            </motion.p>
-            <motion.p
-              initial={{ x: -150, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 2, type: "spring" }}
-              viewport={{ once: true }}
-              className="base-text text-l md:text-xl"
-            >
+            </AnimatedParagraph>
+            <AnimatedParagraph>
               Visit us for professional and affordable automatic gearbox repair
               in <span className="text-primary">Belgrade, Miljakovac 3 </span>
               and get back on the road with confidence!
-            </motion.p>
+            </AnimatedParagraph>
           </div>
         </div>
       </MainPageContainer>
