@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { ReactNode } from "react";
 
 const AnimatedParagraph = ({ children }: { children: ReactNode }) => {
   return (

@@ -1,7 +1,6 @@
 "use client";
 import { Mail, MapPin, Phone } from "lucide-react";
 import MainPageContainer from "./components/MainPageContainer";
-import RotatingCog from "./components/RotatingCog";
 import ServicesGrid from "./components/ServicesGrid";
 import MapComponent from "./components/MapComponent";
 import AnimatedButton from "./components/AnimatedButton";
