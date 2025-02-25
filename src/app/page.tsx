@@ -47,12 +47,18 @@ export default function Home() {
           <div className="flex flex-col items-center p-6">
             <CogTitle title="Contact" />
             <div className="flex flex-col items-start gap-8 mt-16">
-              <ContactInfo text="+381-65-456-28-46" icon={<Phone />} />
+              <ContactInfo
+                text="+381-65-456-28-46"
+                icon={<Phone className="w-full h-full" />}
+              />
               <ContactInfo
                 text="Emanuela Laskera 24, Belgrade"
-                icon={<MapPin />}
+                icon={<MapPin className="w-full h-full" />}
               />
-              <ContactInfo text="dusan.trajkovic@gmail.com" icon={<Mail />} />
+              <ContactInfo
+                text="dusan.trajkovic@gmail.com"
+                icon={<Mail className="w-full h-full" />}
+              />
             </div>
           </div>
         </div>
